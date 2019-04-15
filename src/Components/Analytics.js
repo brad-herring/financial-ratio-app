@@ -3,7 +3,6 @@ import '../App.css';
 
 class Analytics extends Component {
   state = {
-    ticker: "AAPL",
     companyName: undefined,
     revenue: undefined,
     grossProfit: undefined,
@@ -13,7 +12,7 @@ class Analytics extends Component {
 
   getData = async (e) => {
     e.preventDefault();
-    const ticker = this.state.ticker;
+    const ticker = e.target.elements.ticker.value;
 
     const income_call = await fetch(`https://financialmodelingprep.com/api/financials/income-statement/${ticker}?period=quarter&datatype=json`);
     const income_data = await income_call.json();
@@ -37,8 +36,9 @@ class Analytics extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.getData}>
-          <button>Calculate</button>
+        <form className="form" onSubmit={this.getData}>
+          <input className="form-control" type="text" name="ticker" placeholder="Company Ticker..."/>
+          <button id="main-button" className="btn btn-success">Calculate</button>
         </form>
       </div>
     );

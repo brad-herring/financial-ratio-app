@@ -17,7 +17,7 @@ body {
   border-radius: 3px;
   background: #F5F5F5;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-top: 3em;
   margin-bottom: 3em;
 }
@@ -27,10 +27,9 @@ body {
   background: #bdc3c7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
-  border-bottom: 3px solid #202020;
+  border-bottom: 1px solid #202020;
   text-align: center;
   height: 15vh;
 }
@@ -38,6 +37,21 @@ body {
 .header-container h1 {
     color: black;
     opacity: 0.8;
-    font-size: 45px;
+    padding-top: 2vh;
+    font-size: 4vw;
     font-weight: bold;
+}
+
+.form {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+#main-button {
+  margin-left: 1vw;
+  height: 6vh;
+  width: 20vw;
+  font-size: 1.5vw;
+  margin-right: 1vw;
 }
