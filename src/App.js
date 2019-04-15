@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Analytics from './Components/Analytics';
+import Display from './Components/Display';
 
 class App extends Component {
 
