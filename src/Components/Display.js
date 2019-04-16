@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
+import Profitability from './Profitability'
+import Liquidity from './Liquidity'
+import Management from './Managementefficiency'
+import Leverage from './Leverage'
 
-class Display extends Component {
+const Display = props => (
+      <div className="display">
+        <h2 className="analysis-title">Analysis</h2>
+        <hr/>
 
-  render() {
-    return (
-      <div>
-        <h2 className="analysis-title"><center>Analysis</center></h2>
+        <Profitability />
+        <Liquidity />
+        <Management />
+        <Leverage />
       </div>
-    );
-  }
-}
+);
 
 export default Display;

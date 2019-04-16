@@ -59,6 +59,21 @@ body {
   margin-right: 1vw;
 }
 
+.display {
+  text-align: center;
+}
+
 .analysis-title {
   margin: 2vw;
+  font-size: 3vw;
+}
+
+#profitability-title {
+  padding: 2vh;
+  font-size: 2vw;
+}
+
+.display hr {
+  width: 85%;
+  border-top: 1px solid silver;
 }

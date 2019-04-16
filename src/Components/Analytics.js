@@ -32,6 +32,7 @@ class Analytics extends Component {
     console.log(balance_data);
     console.log(cash_data);
     console.log(rating_data);
+    console.log(balance_data.financials[0]["Cash and cash equivalents"]);
   }
 
   render() {
