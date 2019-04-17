@@ -63,6 +63,11 @@ body {
   text-align: center;
 }
 
+.display hr {
+  width: 85%;
+  border-top: 1px solid silver;
+}
+
 .analysis-title {
   margin: 2vw;
   font-size: 3vw;
@@ -70,10 +75,33 @@ body {
 
 #profitability-title {
   padding: 2vh;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
-.display hr {
-  width: 85%;
-  border-top: 1px solid silver;
+.profitability-ratios {
+  font-size: 1.5vw;
+}
+
+#liquidity-title {
+  font-size: 2.5vw;
+}
+
+.liquidity-ratios {
+  font-size: 1.5vw;
+}
+
+#solvency-title {
+  font-size: 2.5vw;
+}
+
+.solvency-ratios {
+  font-size: 1.5vw;
+}
+
+#market-title {
+  font-size: 2.5vw;
+}
+
+.market-ratios {
+  font-size: 1.5vw;
 }
